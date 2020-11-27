@@ -1,0 +1,371 @@
+<div class="container-fluid container-modified container">
+
+  
+    <div class="row ">
+      <div class="col-sm-12 col-md-6 float-left d-inline-block dos">
+        <div class="form-group row">
+        
+
+        </div>
+            <p>Ingrese a continuación los siguientes campos para poder registrar el Comercionpm install --save sweetalert2.</p>
+      </div>
+    </div>
+  
+  
+    <div class="row ">
+      <div class="col-11 float-left d-inline-block dos">
+        <div class="form-group row">
+
+          <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
+            <label class="col-4 col-form-label pl-2  al"
+              > Nit:
+            </label>
+            <div class="col-7 float-right">
+              <input
+                class="form-control input-modified"
+                type="text"
+                name="nit"
+                [(ngModel)]="commercemodel.nit"
+            />
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
+            <label class="col-4 col-form-label pl-2  al"
+              > Nombre:
+            </label>
+            <div class="col-7 float-right">
+              <input
+                class="form-control input-modified"
+                type="text"
+                name="name"
+                [(ngModel)]="commercemodel.name"
+            />
+          </div>
+        </div>                  
+
+            <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
+                <label class="col-4 col-form-label pl-2  al"
+                  > Telefono:
+                </label>
+                <div class="col-7 float-right">
+                  <input
+                    class="form-control input-modified"
+                    type="text"
+                    name="phone"
+                    [(ngModel)]="commercemodel.phone"
+                />
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
+                <label class="col-4 col-form-label pl-2  al"
+                  > Email:
+                </label>
+                <div class="col-7 float-right">
+                  <input
+                    class="form-control input-modified"
+                    type="text"
+                    name="email"
+                    [(ngModel)]="commercemodel.email"
+                 />
+               </div>
+             </div>
+
+            <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
+                <label class="col-4 col-form-label pl-2  al"
+                  > Redes sociales:
+                </label>
+                <div class="col-7 float-right">
+                  <input
+                    class="form-control input-modified"
+                    type="text"
+                    name="redes_sociales"
+                    [(ngModel)]="commercemodel.redes_sociales"
+                 />
+               </div>
+             </div>
+
+            <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
+                <label class="col-4 col-form-label pl-2  al"
+                  > Clase de comercio:
+                </label>
+                <div class="col-7 float-right">
+                  <select
+                    class="form-control input-modified"
+                    type="text"
+                    name="id_class_commerce"
+                    [(ngModel)]="commercemodel.id_class_commerce"
+                 ><option *ngFor="let row of rows2" value="{{row.id_class_commerce}}">{{ row.class_commerce }}</option>
+              
+                 </select>
+               </div>
+             </div>
+
+            <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
+                <label class="col-4 col-form-label pl-2  al"
+                  > Actividad Principal:
+                </label>
+                <div class="col-7 float-right">
+                  <input
+                    class="form-control input-modified"
+                    type="text"
+                    name="main_activity"
+                    [(ngModel)]="commercemodel.main_activity"
+                  />
+                </div>
+              </div>
+
+            <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
+                <label class="col-4 col-form-label pl-2  al"
+                  > Dirección:
+                </label>
+                <div class="col-7 float-right">
+                  <input
+                    class="form-control input-modified"
+                    type="text"
+                    name="address"
+                    [(ngModel)]="commercemodel.address"
+                   />
+                 </div>
+               </div>
+           
+            <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
+                <label class="col-4 col-form-label pl-2  al"
+                  > Pais:
+                </label>
+                <div class="col-7 float-right">
+                  <input
+                    class="form-control input-modified"
+                    type="text"
+                    name="country"
+                    [(ngModel)]="commercemodel.country"
+                   />
+                 </div>
+               </div>
+           
+            <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
+                <label class="col-4 col-form-label pl-2  al"
+                  > Depratametno:
+                </label>
+                <div class="col-7 float-right">
+                  <input
+                    class="form-control input-modified"
+                    type="text"
+                    name="department"
+                    [(ngModel)]="commercemodel.department"
+                   />
+                 </div>
+               </div>
+           
+            <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
+                <label class="col-4 col-form-label pl-2  al"
+                  > Ciudaddd:
+                </label>
+                <div class="col-7 float-right">
+                  <input
+                    class="form-control input-modified"
+                    type="text"
+                    name="city"
+                    [(ngModel)]="commercemodel.city"
+                    />
+                  </div>
+                </div>
+            
+            <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
+                <label class="col-4 col-form-label pl-2  al"
+                  > Barrio:
+                </label>
+                <div class="col-7 float-right">
+                  <input
+                    class="form-control input-modified"
+                    type="text"
+                    name="neighborhood"
+                    [(ngModel)]="commercemodel.neighborhood"
+                   />
+                 </div>
+               </div>
+           
+            <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
+                <label class="col-4 col-form-label pl-2  al"
+                  > Manzana:
+                </label>
+                <div class="col-7 float-right">
+                  <input
+                    class="form-control input-modified"
+                    type="text"
+                    name="apple"
+                    [(ngModel)]="commercemodel.apple"
+                    />
+                  </div>
+                </div>
+            
+            <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
+                <label class="col-4 col-form-label pl-2  al"
+                  > Descripción:
+                </label>
+                <div class="col-7 float-right">
+                  <input
+                    class="form-control input-modified"
+                    type="text"
+                    name="description"
+                    [(ngModel)]="commercemodel.description"
+                   />
+                 </div>
+               </div>
+           
+            <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
+                <label class="col-4 col-form-label pl-2  al"
+                  > Servicio:
+                </label>
+                <div class="col-7 float-right">
+                  <select
+                    class="form-control input-modified"
+                    type="text"
+                    name=""
+                    [(ngModel)]="commercemodel.id_service"
+                   > 
+                   <option *ngFor="let row of rows" value="{{row.id_service}}">{{ row.services }}</option>
+                  </select>
+                  </div>
+               </div>
+           
+            <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
+                <label class="col-4 col-form-label pl-2  al"
+                  > Estado:
+                </label>
+                <div class="col-7 float-right">
+                  <select
+                    class="form-control input-modified"
+                    type="text"
+                    name="id_state_commerce"
+                    [(ngModel)]="commercemodel.id_state_commerce"
+                    >
+                    <option *ngFor="let row of rows3" value="{{row.id_state_commerce}}">{{ row.state_commerce }}</option>
+                    </select>
+                  </div>
+                </div>
+            
+            <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
+                <label class="col-4 col-form-label pl-2  al"
+                  > Fecha de inicio:
+                </label>
+                <div class="col-7 float-right">
+                  <input
+                    class="form-control input-modified"
+                    type="text"
+                    name="start_date"
+                    [(ngModel)]="commercemodel.start_date"
+                    />
+                  </div>
+                </div>
+            
+            <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
+                <label class="col-4 col-form-label pl-2  al"
+                  > Fecha final:
+                </label>
+                <div class="col-7 float-right">
+                  <input
+                    class="form-control input-modified"
+                    type="text"
+                    name="end_date"
+                    [(ngModel)]="commercemodel.end_date"
+                   />
+                 </div>
+               </div>
+           
+            <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
+                <label class="col-4 col-form-label pl-2  al"
+                  > Tipo Comunicación:
+                </label>
+                <div class="col-7 float-right">
+                  <select
+                    class="form-control input-modified"
+                    type="text"
+                    name="id_type_comunication"
+                    [(ngModel)]="commercemodel.id_type_comunication"
+                  >
+                  <option *ngFor="let row of rows4" value="{{row.id_type_comunication}}">{{ row.type_communication }}</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
+                <label class="col-4 col-form-label pl-2  al"
+                  > Tipo de contenido:
+                </label>
+                <div class="col-7 float-right">
+                  <input
+                    class="form-control input-modified"
+                    type="text"
+                    name="id_type_content_commerce"
+                    [(ngModel)]="commercemodel.id_type_content_commerce"
+                   />
+                 </div>
+               </div>   
+
+               <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
+                <label class="col-4 col-form-label pl-2  al"
+                  > Latitud:
+                </label>
+                <div class="col-7 float-right">
+                  <input
+                    class="form-control input-modified"
+                    type="text"
+                    name="lat"
+                    [(ngModel)]="commercemodel.lat"
+                    placeholder="{{commercemodel.lat}}"
+                   />
+                 </div>
+               </div>   
+               
+               <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
+                   <label class="col-4 col-form-label pl-2  al"
+                     > Longitud:
+                   </label>
+                   <div class="col-7 float-right">
+                     <input
+                       class="form-control input-modified"
+                       type="text"
+                       name="log"
+                       [(ngModel)]="commercemodel.long"
+                       placeholder="{{commercemodel.long}}"
+                      />
+                    </div>
+                  </div>   
+                
+
+               <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
+                <label class="col-4 col-form-label pl-2  al"
+                  > Subir imagenes del establecimiento:
+                </label>
+                <div class="col-7 float-right">
+                  <input
+                    class="input-modified"
+                    type="file"
+                    name="img"
+                    (change)="onFileChange($event)" 
+                    multiple="false"
+                   />
+                 </div>
+               </div>   
+           
+        </div>
+
+                   
+      <div class="row ml-4">
+        <div class="col-sm-12">
+          
+
+          <button
+          type="button" class="btn btn-primary btn-sm mr-3 d-inline-block"
+           (click)="submit()"> <i class="fa fa-external-link-square-alt"></i>
+          Enviar
+        </button>
+
+        </div>
+      </div> 
+
+      </div>
+    </div>
+</div>
+  
