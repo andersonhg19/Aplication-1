@@ -59,16 +59,16 @@ export class  RegisterCommerceComponent implements OnInit {
         let nitCommerce=this.commercemodel.nit;
         this.RegisterCommerceService.create(params).subscribe(result=>{
             console.log(result);
-            //swal('Registro exitoso...', this.titularAlerta, 'success');
-        },error=>{})   
-
+        
         let params2 = {img:this.image,name:commerceName,
         nit:nitCommerce};
         console.log(params2)
         this.RegisterCommerceService.send_imagere(params2).subscribe(result=>{
             console.log(result);
-            //swal('Registro exitoso...', this.titularAlerta, 'success');
-        },error=>{})  
+            swal.fire( 'Correcto','El usuario se ha creado exitosamente','success');
+        },error=>{})   
+        },error=>{ 
+          swal.fire( 'Ha ocurrido un error','Los datos no son correctos','error');})  
         
       }
 

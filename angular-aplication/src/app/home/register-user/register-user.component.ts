@@ -41,7 +41,7 @@ export class RegisterUserComponent implements OnInit {
     let params = {user:this.usersmodel};
     console.log(params)
     this.RegisterUserService.create(params).subscribe(result=>{
-     
+      swal.fire( 'Correcto','El usuario se ha creado exitosamente','success');
     },error=>{
       swal.fire( 'Ha ocurrido un error','Los datos no son correctos','error');
   })   

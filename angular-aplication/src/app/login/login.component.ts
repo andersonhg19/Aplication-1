@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { usersmodel } from "../models/users.model";
 import { LoginService } from "../services/login/login.service";
 import { Routes, Router } from "@angular/router";
+import swal from'sweetalert2';
 
 @Component({
   selector: 'app-login',
@@ -43,6 +44,7 @@ export class LoginComponent implements OnInit {
     
       
     },error=>{
+      swal.fire( 'Ha ocurrido un error','Los datos no son correctos','error');
       console.log(error);
     })   
   }
