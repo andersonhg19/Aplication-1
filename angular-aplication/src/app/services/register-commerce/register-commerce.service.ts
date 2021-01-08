@@ -27,12 +27,12 @@ export class RegisterCommerceService {
     }
 
     create(params) {
-        this.url = this.constantes.routeGlobal + "api1/register";
-        return this.http.post(this.url, params).map(res => console.log(res));
+        this.url = this.constantes.routeGlobal + "api/register1";
+        return this.http.post(this.url, params).map(res => res);
       }
 
       send_imagere(params2) {
-        this.url = this.constantes.routeGlobal + "api1/send_image";
+        this.url = this.constantes.routeGlobal + "api/send_image";
         const formData = new FormData();
         formData.append("file", params2.img);
         formData.append("name", params2.name);
@@ -41,11 +41,11 @@ export class RegisterCommerceService {
         return this.http.post(this.url, formData).map(res => console.log(res));
       }
       classCommerce(params) {
-        this.url = this.constantes.routeGlobal + "api1/classCommerce";
+        this.url = this.constantes.routeGlobal + "api/classCommerce1";
         return this.http.post(this.url, params).map(res => res);
       }
       stateCommerce(params) {
-        this.url = this.constantes.routeGlobal + "api1/stateCommerce";
+        this.url = this.constantes.routeGlobal + "api/stateCommerce1";
         return this.http.post(this.url, params).map(res => res);
       }
       typeCommunication(params) {

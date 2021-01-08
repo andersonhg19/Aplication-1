@@ -17,7 +17,7 @@ export class LoginService {
 
   login(params) {
     this.url = this.constantes.routeGlobal + "api/login";
-    return this.http.post(this.url, params).pipe(result=>result);
+    return this.http.post(this.url, params).map(res => res);
   }
 
 

@@ -43,7 +43,7 @@ export class  RegisterCommerceComponent implements OnInit {
       ngOnInit(): void {
       this.getLocation();
       this.classCommerce();
-      this.services();
+      //this.services();
       this.stateCommerce();
       this.typeCommunication();
       }
@@ -57,14 +57,15 @@ export class  RegisterCommerceComponent implements OnInit {
         console.log(params)
         let commerceName=this.commercemodel.name;
         let nitCommerce=this.commercemodel.nit;
-        this.RegisterCommerceService.create(params).subscribe(result=>{
-            console.log(result);
-        
+        this.RegisterCommerceService.create(params).subscribe(res=>{
+            console.log('Llego hasta aqui');
+            console.log(res);
         let params2 = {img:this.image,name:commerceName,
         nit:nitCommerce};
         console.log(params2)
         this.RegisterCommerceService.send_imagere(params2).subscribe(result=>{
             console.log(result);
+
             swal.fire( 'Correcto','El usuario se ha creado exitosamente','success');
         },error=>{})   
         },error=>{ 
@@ -83,7 +84,7 @@ getLocation() {
   });
 }
 
-
+/*
 services(){
   let params;
    this.RegisterUserService.services(params).subscribe(result=>{
@@ -91,7 +92,7 @@ services(){
      this.rows=this.rowss.search;
      console.log(this.rows);
    },error=>{})
- }
+ }*/
 
 
 classCommerce(){
@@ -106,6 +107,9 @@ classCommerce(){
    let params;
     this.RegisterCommerceService.stateCommerce(params).subscribe(result=>{
       this.rowss3=result;
+      this.commercemodel.department="Antioquia";
+      this.commercemodel.country="Colombia";
+      this.commercemodel.id_state_commerce=1;
       this.rows3=this.rowss3.search;
       console.log(this.rows3);
     },error=>{})

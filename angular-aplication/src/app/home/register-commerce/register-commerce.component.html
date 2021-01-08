@@ -72,19 +72,58 @@
                </div>
              </div>
 
+             <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
+              <label class="col-4 col-form-label pl-2  al"
+                > Facebook:
+              </label>
+              <div class="col-7 float-right">
+                <input
+                  class="form-control input-modified"
+                  type="text"
+                  name="social_facebook"
+                  [(ngModel)]="commercemodel.social_facebook"
+                />
+              </div>
+            </div>  
             <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
-                <label class="col-4 col-form-label pl-2  al"
-                  > Redes sociales:
-                </label>
-                <div class="col-7 float-right">
-                  <input
-                    class="form-control input-modified"
-                    type="text"
-                    name="redes_sociales"
-                    [(ngModel)]="commercemodel.redes_sociales"
-                 />
-               </div>
-             </div>
+              <label class="col-4 col-form-label pl-2  al"
+                > Instagram:
+              </label>
+              <div class="col-7 float-right">
+                <input
+                  class="form-control input-modified"
+                  type="text"
+                  name="social_instagram"
+                  [(ngModel)]="commercemodel.social_instagram"
+                />
+              </div>
+            </div>  
+            <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
+              <label class="col-4 col-form-label pl-2  al"
+                > Twitter:
+              </label>
+              <div class="col-7 float-right">
+                <input
+                  class="form-control input-modified"
+                  type="text"
+                  name="social_twitter"
+                  [(ngModel)]="commercemodel.social_twitter"
+                />
+              </div>
+            </div>  
+            <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
+              <label class="col-4 col-form-label pl-2  al"
+                > Tik tok:
+              </label>
+              <div class="col-7 float-right">
+                <input
+                  class="form-control input-modified"
+                  type="text"
+                  name="social_tiktok"
+                  [(ngModel)]="commercemodel.social_tiktok"
+                />
+              </div>
+            </div> 
 
             <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
                 <label class="col-4 col-form-label pl-2  al"
@@ -101,20 +140,6 @@
                  </select>
                </div>
              </div>
-
-            <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
-                <label class="col-4 col-form-label pl-2  al"
-                  > Actividad principal:
-                </label>
-                <div class="col-7 float-right">
-                  <input
-                    class="form-control input-modified"
-                    type="text"
-                    name="main_activity"
-                    [(ngModel)]="commercemodel.main_activity"
-                  />
-                </div>
-              </div>
 
             <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
                 <label class="col-4 col-form-label pl-2  al"
@@ -146,7 +171,7 @@
            
             <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
                 <label class="col-4 col-form-label pl-2  al"
-                  > Departametno:
+                  > Departamento:
                 </label>
                 <div class="col-7 float-right">
                   <input
@@ -214,6 +239,8 @@
                  </div>
                </div>
            
+
+               <!--
             <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
                 <label class="col-4 col-form-label pl-2  al"
                   > Servicio:
@@ -229,6 +256,8 @@
                   </select>
                   </div>
                </div>
+               ------>
+
            
             <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
                 <label class="col-4 col-form-label pl-2  al"
@@ -248,34 +277,6 @@
             
             <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
                 <label class="col-4 col-form-label pl-2  al"
-                  > Fecha de inicio:
-                </label>
-                <div class="col-7 float-right">
-                  <input
-                    class="form-control input-modified"
-                    type="text"
-                    name="start_date"
-                    [(ngModel)]="commercemodel.start_date"
-                    />
-                  </div>
-                </div>
-            
-            <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
-                <label class="col-4 col-form-label pl-2  al"
-                  > Fecha final:
-                </label>
-                <div class="col-7 float-right">
-                  <input
-                    class="form-control input-modified"
-                    type="text"
-                    name="end_date"
-                    [(ngModel)]="commercemodel.end_date"
-                   />
-                 </div>
-               </div>
-           
-            <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
-                <label class="col-4 col-form-label pl-2  al"
                   > Tipo comunicación:
                 </label>
                 <div class="col-7 float-right">
@@ -289,7 +290,7 @@
                   </select>
                 </div>
               </div>
-
+              <!--
               <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
                 <label class="col-4 col-form-label pl-2  al"
                   > Tipo de contenido:
@@ -303,6 +304,40 @@
                    />
                  </div>
                </div>   
+              -->
+
+               <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
+                <label class="col-4 col-form-label pl-2  al"
+                  > Horario atención:
+                </label>
+                <div class="col-7 float-right">
+                  <input
+                    class="form-control input-modified"
+                    type="text"
+                    name="hours"
+                    [(ngModel)]="commercemodel.hours"
+                   />
+                 </div>
+               </div>   
+               
+               
+            <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
+              <label class="col-4 col-form-label pl-2  al"
+              > ¿Tiene domicilio?:
+              </label>
+              <div class="col-7 float-right">
+                <select
+                  class="form-control input-modified"
+                  type="text"
+                  name="delivery"
+                  [(ngModel)]="commercemodel.delivery"
+                >
+                <option value="1">Si</option>
+                <option value="0">No</option>
+                </select>
+              </div>
+            </div>
+
 
                <div class="col-sm-12 col-md-6 mb-1 mt-1 uno ">
                 <label class="col-4 col-form-label pl-2  al"
@@ -348,7 +383,8 @@
                     multiple="false"
                    />
                  </div>
-               </div>   
+               </div>  
+
            
         </div>
       </div>

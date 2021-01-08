@@ -12,4 +12,8 @@ public id_type_user			: any;
 public id_service			: any;
 public id_state_user		: any;
 public password		        : any;
+public social_facebook      : any;
+public social_instagram     : any;
+public social_twitter       : any;
+public social_tiktok        : any;
 }

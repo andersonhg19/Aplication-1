@@ -52,6 +52,11 @@ export class RegisterUserComponent implements OnInit {
     this.RegisterUserService.typeDocuments(params).subscribe(result=>{
       this.rowss=result;
       this.rows=this.rowss.search;
+      this.usersmodel.id_type_document=2;
+      this.usersmodel.id_type_comunication=2;
+      this.usersmodel.id_state_user=1;
+      this.usersmodel.id_service=1;
+      this.usersmodel.id_type_user=4;
       console.log(this.rows);
     },error=>{})
   }
@@ -84,6 +89,7 @@ export class RegisterUserComponent implements OnInit {
      this.RegisterUserService.services(params).subscribe(result=>{
        this.rowss5=result;
        this.rows5=this.rowss5.search;
+
        console.log(this.rows5);
      },error=>{})
    }
